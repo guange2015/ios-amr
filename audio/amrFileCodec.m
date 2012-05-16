@@ -548,7 +548,8 @@ int SkipCaffHead(char* buf){
 }
 
 
-
+//此处将一个录制的pcm直接转换为amr格式
+//调用方式为 EncodeWAVEToAMR(pcmData,1,16);
 NSData* EncodeWAVEToAMR(NSData* data, int nChannels, int nBitsPerSample)
 {
     NSArray *paths               = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
