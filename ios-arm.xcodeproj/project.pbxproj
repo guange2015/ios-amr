@@ -335,6 +335,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/arm/lib\"",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -351,6 +352,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/arm/lib\"",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -376,6 +378,7 @@
 				37EF26091790EE020097E941 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

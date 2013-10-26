@@ -19,3 +19,9 @@ Demo中两个方法的实现可以直接用
 
 ```startRecord``` ```stopRecord```
 
+版本更新历史
+-------------
+
+1.1
+
+* 兼容armv7和armv7s, 去除armv6支持
