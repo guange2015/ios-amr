@@ -33,6 +33,9 @@
         //We could just use record and then switch it to playback leter, but
         //since we are going to do both lets set it up once.
         [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error: &error];
+        NSLog(@"error doing AVAudioSessionCategoryPlayAndRecord - %@", [error localizedDescription]);
+        
+        
         
         UInt32 audioRouteOverride = kAudioSessionOverrideAudioRoute_Speaker;
         AudioSessionSetProperty (kAudioSessionProperty_OverrideAudioRoute,
@@ -41,6 +44,14 @@
         
         //Activate the session
         [audioSession setActive:YES error: &error];
+        
+        
+        NSError *audioError = nil;
+        BOOL success = [audioSession overrideOutputAudioPort:AVAudioSessionPortOverrideSpeaker error:&audioError];
+        if(!success)
+        {
+            NSLog(@"error doing outputaudioportoverride - %@", [audioError localizedDescription]);
+        }
     }
     return self;
 }

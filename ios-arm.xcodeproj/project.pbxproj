@@ -209,6 +209,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "huang xiaoguang";
+				TargetAttributes = {
+					37EF25E31790EE020097E941 = {
+						DevelopmentTeam = NWU38LMDCS;
+					};
+				};
 			};
 			buildConfigurationList = 37EF25DF1790EE020097E941 /* Build configuration list for PBXProject "ios-arm" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -328,6 +333,7 @@
 		37EF26081790EE020097E941 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = NWU38LMDCS;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios-arm/ios-arm-Prefix.pch";
 				INFOPLIST_FILE = "ios-arm/ios-arm-Info.plist";
@@ -345,6 +351,7 @@
 		37EF26091790EE020097E941 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = NWU38LMDCS;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ios-arm/ios-arm-Prefix.pch";
 				INFOPLIST_FILE = "ios-arm/ios-arm-Info.plist";

@@ -271,7 +271,7 @@ NSData* DecodeAMRToWAVE(NSData* data) {
         return nil;
     }
     
-	const char* rfile = [data bytes];
+	const char* rfile = (const char*)[data bytes];
     int maxLen = [data length];
     int pos = 0;
     
@@ -281,7 +281,7 @@ NSData* DecodeAMRToWAVE(NSData* data) {
 		data = fuckAndroid3GP(data);
         }
     
-    rfile = [data bytes];
+    rfile = (const char*)[data bytes];
 	// 检查amr文件头
     if (strncmp(rfile, AMR_MAGIC_NUMBER, strlen(AMR_MAGIC_NUMBER)))
     {
@@ -552,18 +552,13 @@ int SkipCaffHead(char* buf){
 //调用方式为 EncodeWAVEToAMR(pcmData,1,16);
 NSData* EncodeWAVEToAMR(NSData* data, int nChannels, int nBitsPerSample)
 {
-    NSArray *paths               = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentPath       = [paths objectAtIndex:0];
-    NSString *wavFile        = [documentPath stringByAppendingPathComponent:[NSString stringWithFormat:@"11.caf"]];
-    NSLog(@"documentPath=%@", documentPath);
-    
     if (data==nil){
         //data = [NSData dataWithContentsOfFile:wavFile];
         return nil;
     }
     
     int nPos  = 0;
-    char* buf = [data bytes];
+    char* buf = (char*)[data bytes];
     int maxLen = [data length];
     
 
