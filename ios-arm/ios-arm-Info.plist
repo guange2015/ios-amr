@@ -24,6 +24,10 @@
 	<string>1.1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+    
+    <key>NSMicrophoneUsageDescription</key>
+    <string>实时语音沟通</string>
+    
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
