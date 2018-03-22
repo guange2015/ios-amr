@@ -437,7 +437,7 @@ NSData* EncodePCMToAMR(char* data, int maxLen,int nChannels, int nBitsPerSample)
 {
     char* oldBuf = data;
     /* input speech vector */
-	short speech[160];
+	short speech[PCM_FRAME_SIZE];
 	
 	/* counters */
 	int byte_counter, frames = 0, bytes = 0;
